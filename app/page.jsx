@@ -4,7 +4,7 @@ import Social from "@/components/ui/Social";
 import Photo from "@/components/ui/Photo";
 import Stats from "@/components/ui/Stats";
 
-const CV_FILE = "/public/Lior_Klunover_CV.pdf";
+const CV_FILE = "/Lior_Klunover_CV.pdf";
 
 const Page = () => {
  
