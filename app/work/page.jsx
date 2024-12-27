@@ -19,45 +19,42 @@ import Image from 'next/image'
 const projects = [
     { 
       num: "01",
-      category: 'Web Development',
+      category: 'Secure Client Server File Transfer Protocol',
       title: 'Project 1',
-      description: 'This is a project description',
+      description: 'Developed a robust client-server system using C++ for the client and Python for the server, enabling secure file transfer and storage. The server-side application employs a MySQL Lite database for managing and storing incoming files from multiple clients. It effectively handles simultaneous client requests through multithreading, ensuring efficient and concurrent processing. To guarantee data security during transmission, implemented RSA encryption for file transfer, safeguarding file integrity and confidentiality throughout the process.',
       stack: [
-        {name: 'React', color: 'blue'}, 
-        {name: 'Next.js', color: 'gray'},
-         {name: 'Tailwind', color: 'green'}
+        {name: 'Python', color: 'blue'}, 
+        {name: 'C++', color: 'gray'}
         ],
-        image: '/public/Project1.png',
+        image: '/Secure-Client-Server-File-Transfer.jpg',
         live: "",
-        github: "",
+        github: "https://github.com/LiorKlunover/Secure-Client-Server-File-Transfer",
     },
     { 
-      num: "2",
-      category: 'Python Development',
+      num: "02",
+      category: 'Assembler - C',
       title: 'Project 2',
-      description: 'This is a project description',
+      description: 'Developed a powerful assembler program with over 2000 lines of code, translating high-level assembly-like code into machine code for a specialized processor. Integrated advanced features such as symbol resolution, instruction parsing, and memory management, dramatically boosting code translation efficiency and accuracy.',
       stack: [
-        {name: 'Numpy', color: 'yellow'},
-        {name: 'Pandas', color: 'blue'},
-        {name: 'Matplotlib', color: 'green'}
+        {name: 'C++', color: 'yellow'},
         ],
-        image: '',
+        image: '/Assembler.png',
         live: "",
-        github: "",
+        github: "https://github.com/LiorKlunover/Assembler",
     },
     { 
-      num: "3",
-      category: 'JavaFX Development',
+      num: "03",
+      category: 'Microsoft Stock Forecasting with LSTMs',
       title: 'Project 3',
-      description: 'This is a project description',
+      description: 'Developed a recurrent neural network (RNN) model using TensorFlow and Keras to predict Microsoft (MSFT) stock prices. Utilized historical stock data from Yahoo Finance, implemented data preprocessing techniques including Min-Max scaling and lagged features, and optimized the model using Adam optimizer. ',
       stack: [
-        {name:  'Java', color: 'red'},
-        {name: 'JavaFX', color: 'blue'},
-        
+        {name:  'Python ', color: 'red'},
+        {name: 'TensorFlow ', color: 'blue'},
+        {name: 'Keras ', color: 'blue'},
         ],
-        image: '',
+        image: '/Microsoft-Stock-Forecasting-with-LSTMs.png',
         live: '',
-        github: '',
+        github: 'https://colab.research.google.com/drive/1P6SmI0fuRjIBNuLxZBN9wEgYZ9hE6uTb?usp=sharing',
     },
 
 
@@ -126,7 +123,7 @@ const Work = () => {
                       </Link>
                     
                      {/*Github button */}
-                      <Link href={project.live}>
+                      <Link href={project.github}>
                         <TooltipProvider delayDuration={100} >
                           <Tooltip>
                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
