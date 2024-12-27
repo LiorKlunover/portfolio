@@ -2,7 +2,7 @@
 import {motion} from 'framer-motion'
 import React, {useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Navigation } from 'swiper/modules';
 import{BsArrowUpRight,BsGithub} from 'react-icons/bs'
 
 import {
@@ -142,11 +142,13 @@ const Work = () => {
             
             <div className="w-full xl:w-1/2">
               <Swiper 
-                spaceBetween={30}
-                slidesPerView={1}
-                className="xl:h-[520px] mb-12"
-                onSlideChange={handleSlideChange}
-              >
+                 spaceBetween={30}
+                 slidesPerView={1}
+                 className="xl:h-[520px] mb-12"
+                 onSlideChange={handleSlideChange}
+                 modules={[Navigation]}   
+                 navigation 
+              >            
                   {projects.map((project, index) => {
                     return (
                       <SwiperSlide key={index} className="w-full">
