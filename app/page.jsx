@@ -19,7 +19,7 @@ const Page = () => {
               Hello I'm <br /><span className="text-accent">Lior Klunover</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            Computer Science student and soon-to-be graduate seeking software development opportunities. Proficient in Java, React, Python, SQL and C, with expertise in Object-Oriented Programming.
+            I'm a recent Computer Science graduate passionate about software development and AI, with experience in full-stack applications, client-server systems, and system programming. I've been actively exploring agent-based AI using tools like LangChain and LangGraph, focusing on automation and intelligent decision-making. Eager to contribute to innovative projects in a dynamic, forward-thinking team.
             </p>
             {/* Button and social media */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

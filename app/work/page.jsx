@@ -19,8 +19,24 @@ import Image from 'next/image'
 const projects = [
     { 
       num: "01",
-      category: 'Secure Client Server File Transfer Protocol',
+      category: 'WhatsApp AI Agent - SaaS Platform',
       title: 'Project 1',
+      description: 'Built a production-ready full-stack SaaS application with AI-powered WhatsApp automation. Features include Google OAuth authentication, Stripe payment integration with webhooks, subscription management (free & premium tiers), real-time usage tracking, and a Chrome extension for WhatsApp Web. Implemented secure payment verification, serverless architecture with Convex, and modern responsive UI with TypeScript. Solved complex challenges including webhook-based payment verification, Chrome extension OAuth, and real-time usage enforcement.',
+      stack: [
+        {name: 'React', color: 'blue'}, 
+        {name: 'TypeScript', color: 'blue'},
+        {name: 'Convex', color: 'orange'},
+        {name: 'Stripe', color: 'purple'},
+        {name: 'TailwindCSS', color: 'cyan'}
+        ],
+        image: '/whatsapp_ai_agent1.png',
+        live: "",
+        github: "",
+    },
+    { 
+      num: "02",
+      category: 'Secure Client Server File Transfer Protocol',
+      title: 'Project 2',
       description: 'Developed a robust client-server system using C++ for the client and Python for the server, enabling secure file transfer and storage. The server-side application employs a MySQL Lite database for managing and storing incoming files from multiple clients. It effectively handles simultaneous client requests through multithreading, ensuring efficient and concurrent processing. To guarantee data security during transmission, implemented RSA encryption for file transfer, safeguarding file integrity and confidentiality throughout the process.',
       stack: [
         {name: 'Python', color: 'blue'}, 
@@ -31,9 +47,9 @@ const projects = [
         github: "https://github.com/LiorKlunover/Secure-Client-Server-File-Transfer",
     },
     { 
-      num: "02",
+      num: "03",
       category: 'Assembler - C',
-      title: 'Project 2',
+      title: 'Project 3',
       description: 'Developed a powerful assembler program with over 2000 lines of code, translating high-level assembly-like code into machine code for a specialized processor. Integrated advanced features such as symbol resolution, instruction parsing, and memory management, dramatically boosting code translation efficiency and accuracy.',
       stack: [
         {name: 'C++', color: 'yellow'},
