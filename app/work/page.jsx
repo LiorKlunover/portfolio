@@ -59,7 +59,7 @@ const projects = [
         github: "https://github.com/LiorKlunover/Assembler",
     },
     { 
-      num: "03",
+      num: "04",
       category: 'Microsoft Stock Forecasting with LSTMs',
       title: 'Project 3',
       description: 'Developed a recurrent neural network (RNN) model using TensorFlow and Keras to predict Microsoft (MSFT) stock prices. Utilized historical stock data from Yahoo Finance, implemented data preprocessing techniques including Min-Max scaling and lagged features, and optimized the model using Adam optimizer. ',
